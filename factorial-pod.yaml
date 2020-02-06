@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: factorial-pod
+  labels:
+    app: factorial
+spec:
+  containers:
+  - name: factorial-container
+    image: ifactorial:0.5

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ifactorial-ui
+  labels:
+    run: ifactorial-ui
+spec:
+  ports:
+    - name: default
+      port: 9091
+      protocol: TCP
+  selector:
+    run: ifactorial-ui
+  type: LoadBalancer
